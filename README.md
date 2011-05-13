@@ -28,8 +28,8 @@ Just create an initializer in app/initializers/, and set something like:
     end
 
 The format of the priorized locales is a hash. For each record in the hash:
-*  The key is the symbol for the locale, e.g :en or :es
-*  The value is your priorized Facebook locale for it, e.g. "en_US" for :en or "es_ES" for :es
+*   The key is the symbol for the locale, e.g :en or :es
+*   The value is your priorized Facebook locale for it, e.g. "en_US" for :en or "es_ES" for :es
 
 Nevertheless, FB-Localizer itself has default locales for a ruby locale. The complete list is:
 *  United States' english
