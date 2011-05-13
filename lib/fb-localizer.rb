@@ -7,6 +7,7 @@ module FbLocalizer
 
   module FbLocalizerHelpers
     def get_fb_locale(ruby_locale = nil)
+      ruby_locale = ruby_locale.to_sym if ruby_locale.is_a? String
       ruby_locale ||= I18n.locale
       fb_candidate_locales = FbLocalizer::FbLocalizerHelpers::FB_LOCALES.select{ |l| l.match(/^#{ruby_locale}/)}
       if fb_candidate_locales.any?
@@ -17,7 +18,7 @@ module FbLocalizer
           fb_candidate_locales[0]
         end
       else
-        "en_US"
+        "en_US" # US english by default
       end
     end
   end
