@@ -1,0 +1,6 @@
+- @names.each do |k,v|
+  = link_to v, root_path(:locale => k)
+%hr
+%h2= @names[@locale]
+%script{:src => "http://connect.facebook.net/#{get_fb_locale(@locale)}/all.js#xfbml=1"}
+%fb:like{:href => request.url, :layout => "button_count", :show_faces => "true"}
