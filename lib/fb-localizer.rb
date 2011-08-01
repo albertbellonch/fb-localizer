@@ -5,6 +5,10 @@ module FbLocalizer
   DEFAULT_PRIORITIES = { :en => "en_US", :es => "es_ES", :pt => "pt_PT", :zh => "zh_CN" }
   mattr_accessor :priorized
 
+  @@skip_loading = false
+  @@skip_loading = true if defined?(Rails) && Rails.env.development? || Rails.env.test?
+  mattr_accessor :skip_loading
+
   module FbLocalizerHelpers
     def get_fb_locale(ruby_locale = nil)
       ruby_locale = ruby_locale.to_sym if ruby_locale.is_a? String
