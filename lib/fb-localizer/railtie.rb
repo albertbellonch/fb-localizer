@@ -15,7 +15,6 @@ module FbLocalizer
         puts "FB-Localizer => Skipped, using defaults instead"
         load_defaults
       else
-
         begin
           Timeout::timeout(5) do
             url = "http://www.facebook.com/translations/FacebookLocales.xml"
