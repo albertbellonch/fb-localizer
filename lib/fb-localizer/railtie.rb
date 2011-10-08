@@ -16,7 +16,7 @@ module FbLocalizer
         load_defaults
       else
         begin
-          Timeout::timeout(5) do
+          Timeout::timeout(15) do
             url = "http://www.facebook.com/translations/FacebookLocales.xml"
             open(url){ |f|
               xml = f.readlines.join("\n")
