@@ -13,6 +13,8 @@ So, if we want to add a localized "I like it" button into our web page, we need 
 Note: a more complex algorithm on planning which is the nearest locale
 is planned.
 
+[![Build Status](https://secure.travis-ci.org/albertbellonch/fb-localizer.png)](http://travis-ci.org/albertbellonch/fb-localizer)
+
 Priority locales
 ----------------
 
