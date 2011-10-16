@@ -21,7 +21,7 @@ nearest Facebook's locale. This way you can localize the "I like it" button on e
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency "rspec-rails", "~> 2.5"
+  s.add_development_dependency "rspec-rails"
   s.add_dependency "rails"
   s.add_dependency "i18n"
   s.add_dependency "libxml-ruby"
