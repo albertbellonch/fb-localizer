@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fb-localizer (0.2.0)
+    fb-localizer (0.2.1)
       i18n
       libxml-ruby
       rails
